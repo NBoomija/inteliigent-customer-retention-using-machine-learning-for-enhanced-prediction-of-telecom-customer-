@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Telecom Churn Modelling</title>  
+<style>
+/* Define the animation */
+  @keyframes slidein {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+ /* Apply the animation to the heading element */
+  h1 {
+    animation: slidein 2s forwards;
+  }
+   /* Add styles for the page layout and elements */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: hsla(0, 70%, 80%, 0.5);
+        background-repeat:none;
+        background-size:cover; 
+         
+        margin: 0;
+        padding: 0; 
+      }
+      
+      header {
+       color:white;
+        padding: 20px;
+      }
+      
+      h1 {
+        margin: 0;
+      }
+      
+      nav {
+        overflow: hidden;
+      }
+      
+ 	      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      nav a:hover {
+       background-color: #003366;
+        color: white;
+      }
+      
+      section {
+        margin:40px;
+        padding:10px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px grey;
+      }
+      
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      th, td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      tr:hover {
+        background-color: #f2f2f2;
+      }
+      
+      th {
+        background-color: #003366;
+        color: white;
+      }
+      
+      footer {
+        background-color: #003366;
+        color: white;
+
+        text-align: center;
+        padding: 20px;
+      } 
+#sub{ 
+width:12%;  
+margin-left:400px; 
+background-color:green; 
+color:white; 
+position:absolute; 
+left:300px;  
+top:700px; 	
+}  
+img{
+width:400px;
+height:200px;
+} 
+h1 {
+  color: blue;
+}
+h2 {
+  color:red;
+}
+
+p {
+ color:#9400D3;
+ font-size:15px;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>  
+     
+    </header>
+    <center><h1>TELECOM CUSTOMER CHURN PREDICTION</h1></center>
+    
+    
+    
+      <section>
+
+       <h2>Project Overview:</h2>
+      <p><b>This project uses machine learning algorithms to predict telecom churn and improve customer retention. By analyzing customer data, such as usage patterns, customer complaints, and demographics, the algorithm can identify customers who are at risk of leaving and target them with personalized offers and promotions to encourage them to stay.</b></p>
+      <h2>Data Collection and Preprocessing:</h2>
+      <p><b>The data used in this project was collected from various sources, including customer service records, billing records, and usage logs. The data was preprocessed to remove duplicates, missing values, and outliers, and to normalize the data for use in the machine learning algorithm.</b></p>
+      <h2>Machine Learning Model:</h2>
+      <p><b>The machine learning model used in this project is a decision tree classifier, which is trained on the preprocessed data to predict telecom churn. The model is evaluated using various metrics, such as accuracy, precision, recall, and F1-score, to ensure its effectiveness and reliability.</b></p>
+      <h2>Results and Conclusions:</h2>
+      <p><b>The results of this project show that the machine learning algorithm can effectively predict telecom churn and improve customer retention.By targeting customers who are at risk of leaving with.</b></p> 
+    
+<img src="{{url_for('static',filename='my.jpeg')}}"> 
+ <form action="{{ url_for('prediction')}}"> 
+<input id="sub" type="submit" value="Go"> 
+</form> 
+
+</body>
+ </html>
